@@ -213,6 +213,24 @@ $$(".mini-counter button").forEach((btn) =>
   })
 );
 
+/* ============ Live mini calculator (Calculator demo) ============ */
+const calcOut = $("#calcOut");
+$("#miniCalc").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const a = parseFloat($("#calcA").value);
+  const b = parseFloat($("#calcB").value);
+  const op = $("#calcOp").value;
+  const result = op === "+" ? a + b : op === "-" ? a - b : op === "*" ? a * b : a / b;
+
+  const valid = isFinite(result);
+  calcOut.textContent = valid ? +result.toFixed(8) : "Can't ÷ 0";
+  calcOut.title = calcOut.textContent;
+  calcOut.classList.toggle("error", !valid);
+  calcOut.classList.remove("bump");
+  void calcOut.offsetWidth;
+  calcOut.classList.add("bump");
+});
+
 /* ============ Contact form -> WhatsApp ============ */
 $("#contactForm").addEventListener("submit", (e) => {
   e.preventDefault();

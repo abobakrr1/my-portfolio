@@ -333,7 +333,23 @@ body::before {
 .p-link.primary { background: var(--grad); background-size: 200% auto; border-color: transparent; color: #fff; }
 .p-link.primary:hover { background-position: right center; box-shadow: 0 8px 24px -8px rgba(139, 92, 246, 0.7); }
 
-.mini-counter {display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.mini-calc { display: flex; align-items: center; gap: 6px; margin-top: 18px; }
+.mini-calc input, .mini-calc select, .mini-calc button, .mini-calc output {
+  height: 36px; border-radius: 10px; font-family: var(--mono); font-size: 0.9rem;
+  border: 1px solid var(--border); background: rgba(255, 255, 255, 0.05); color: var(--text);
+}
+.mini-calc input { width: 0; flex: 1; min-width: 0; padding: 0 10px; outline: none; transition: border-color 0.3s; -moz-appearance: textfield; }
+.mini-calc input::-webkit-outer-spin-button, .mini-calc input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.mini-calc input:focus, .mini-calc select:focus { border-color: var(--accent); outline: none; }
+.mini-calc select { padding: 0 6px; cursor: pointer; color: #d8ccff; background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.3); }
+.mini-calc select option { background: var(--bg-2); color: var(--text); }
+.mini-calc button { width: 36px; flex-shrink: 0; border: 0; background: var(--grad); color: #fff; font-weight: 600; transition: transform 0.12s; }
+.mini-calc button:active { transform: scale(0.9); }
+.mini-calc output { flex: 1; min-width: 0; display: grid; place-items: center; padding: 0 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--accent-2); border-style: dashed; }
+.mini-calc output.bump { animation: bump 0.3s var(--ease); }
+.mini-calc output.error { color: var(--accent-3); }
+
+.mini-counter { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
 .mini-counter button {
   width: 36px; height: 36px; border-radius: 10px; font-size: 1.2rem;
   border: 1px solid var(--border); background: rgba(255, 255, 255, 0.05);

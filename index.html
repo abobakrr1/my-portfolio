@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abobakr Khaled | Web Developer</title>
   <meta name="description" content="Abobakr Khaled Ibrahim — Computer Science student and web developer from Cairo, Egypt." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -207,7 +208,7 @@
           <div class="project-top"><span class="project-num">05</span><span class="project-emoji">📝</span></div>
           <h3>Notes Application</h3>
           <p>Create and manage notes with a simple, user‑friendly interface powered by interactive JavaScript functionality.</p>
-          <ul class="tags"><li>JavaScript</li><li>DOM</li><li>UI</li></ul>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li></ul>
           <div class="project-links">
             <a href="https://abobakrr1.github.io/notes/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
             <a href="https://github.com/abobakrr1/notes" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
@@ -219,6 +220,18 @@
           <h3>Calculator</h3>
           <p>A functional calculator with arithmetic operations, interactive input handling and a clean, intuitive interface.</p>
           <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <form class="mini-calc" id="miniCalc">
+            <input type="number" id="calcA" step="any" placeholder="0" aria-label="First number" required />
+            <select id="calcOp" aria-label="Operator">
+              <option value="+">+</option>
+              <option value="-">−</option>
+              <option value="*">×</option>
+              <option value="/">÷</option>
+            </select>
+            <input type="number" id="calcB" step="any" placeholder="0" aria-label="Second number" required />
+            <button type="submit" aria-label="Calculate">=</button>
+            <output id="calcOut">?</output>
+          </form>
           <div class="project-links">
             <a href="https://abobakrr1.github.io/calculator/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
             <a href="https://github.com/abobakrr1/calculator" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
@@ -229,7 +242,7 @@
           <div class="project-top"><span class="project-num">07</span><span class="project-emoji">🔢</span></div>
           <h3>Counter App</h3>
           <p>An interactive counter with increment and control functionality, wrapped in a simple and easy‑to‑use interface.</p>
-          <ul class="tags"><li>JavaScript</li><li>Events</li></ul>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
           <div class="mini-counter">
             <button data-step="-1" aria-label="Decrease">−</button>
             <output id="miniCount">0</output>
