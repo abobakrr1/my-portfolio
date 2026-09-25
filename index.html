@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abobakr Khaled | Web Developer</title>
+  <meta name="description" content="Abobakr Khaled Ibrahim — Computer Science student and web developer from Cairo, Egypt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader">
+    <div class="loader-text"><span>&lt;</span>AK<span>/&gt;</span></div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span>&lt;</span>Abobakr<span>/&gt;</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link"><em>01.</em> About</a>
+      <a href="#skills" class="nav-link"><em>02.</em> Skills</a>
+      <a href="#projects" class="nav-link"><em>03.</em> Projects</a>
+      <a href="#education" class="nav-link"><em>04.</em> Education</a>
+      <a href="#contact" class="nav-link"><em>05.</em> Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-tag reveal"><span class="dot"></span> Available for internships &amp; freelance</p>
+        <h1 class="hero-title reveal">
+          <span class="line">Hi, I'm</span>
+          <span class="line gradient-text">Abobakr Khaled</span>
+        </h1>
+        <p class="hero-role reveal">I build <span class="typed" id="typed"></span><span class="caret">|</span></p>
+        <p class="hero-desc reveal">
+          Computer Science student at Al Sadat Academy, turning ideas into clean, responsive and
+          user‑friendly web experiences — one line of code at a time.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary magnetic">View My Work <span>→</span></a>
+          <a href="#contact" class="btn btn-ghost magnetic">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="code-card tilt">
+          <div class="code-head">
+            <i></i><i></i><i></i>
+            <span>abobakr.js</span>
+          </div>
+<pre class="code-body"><code><span class="k">const</span> <span class="v">developer</span> = {
+  name: <span class="s">"Abobakr Khaled"</span>,
+  location: <span class="s">"Cairo, Egypt"</span>,
+  study: <span class="s">"Computer Science"</span>,
+  skills: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>,
+           <span class="s">"C++"</span>, <span class="s">"SQL"</span>],
+  loves: <span class="s">"Problem Solving"</span>,
+  graduation: <span class="n">2028</span>,
+  <span class="f">build</span>() {
+    <span class="k">return</span> <span class="s">"awesome things 🚀"</span>;
+  }
+};</code></pre>
+        </div>
+        <div class="float-badge b1">⚡ Problem Solver</div>
+        <div class="float-badge b2">🎨 Web Designer</div>
+        <div class="float-badge b3">&lt;/&gt; 7+ Projects</div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>HTML5</span><b>✦</b><span>CSS3</span><b>✦</b><span>JavaScript</span><b>✦</b><span>C++</span><b>✦</b>
+        <span>SQL</span><b>✦</b><span>OOP</span><b>✦</b><span>Data Structures</span><b>✦</b><span>Algorithms</span><b>✦</b>
+        <span>Networking</span><b>✦</b><span>Web Design</span><b>✦</b>
+        <span>HTML5</span><b>✦</b><span>CSS3</span><b>✦</b><span>JavaScript</span><b>✦</b><span>C++</span><b>✦</b>
+        <span>SQL</span><b>✦</b><span>OOP</span><b>✦</b><span>Data Structures</span><b>✦</b><span>Algorithms</span><b>✦</b>
+        <span>Networking</span><b>✦</b><span>Web Design</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-title reveal"><em>01.</em> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Computer Science student</strong> at Al Sadat Academy for Management Sciences
+            with a strong passion for <strong>web development</strong> and software engineering.
+          </p>
+          <p>
+            I work with C++, HTML, CSS, JavaScript and SQL, and I have a solid foundation in
+            Object‑Oriented Programming, Data Structures &amp; Algorithms, Networking and Electronics.
+          </p>
+          <p>
+            From interactive apps to a real‑time chatting system, I love building practical solutions
+            that feel great to use. My focus: <strong>clean code, clear design, happy users.</strong>
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><h3 class="counter" data-target="7">0</h3><p>Projects Built</p></div>
+          <div class="stat reveal"><h3 class="counter" data-target="5">0</h3><p>Languages &amp; Tech</p></div>
+          <div class="stat reveal"><h3 class="counter" data-target="2028">0</h3><p>Graduation Year</p></div>
+          <div class="stat reveal"><h3>∞</h3><p>Curiosity</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><em>02.</em> Skills &amp; Tools</h2>
+      <div class="bento">
+        <div class="bento-card big reveal spotlight">
+          <div class="bento-icon">&lt;/&gt;</div>
+          <h3>Web Technologies</h3>
+          <p>Crafting responsive, interactive interfaces from scratch.</p>
+          <div class="bars">
+            <div class="bar"><span>HTML</span><div><i data-w="92"></i></div></div>
+            <div class="bar"><span>CSS</span><div><i data-w="88"></i></div></div>
+            <div class="bar"><span>JavaScript</span><div><i data-w="80"></i></div></div>
+          </div>
+        </div>
+        <div class="bento-card reveal spotlight">
+          <div class="bento-icon">{ }</div>
+          <h3>Programming</h3>
+          <div class="chips"><span>C++</span><span>JavaScript</span><span>SQL</span></div>
+        </div>
+        <div class="bento-card reveal spotlight">
+          <div class="bento-icon">◈</div>
+          <h3>Core Concepts</h3>
+          <div class="chips"><span>OOP</span><span>Data Structures</span><span>Algorithms</span><span>Networking</span><span>Electronics</span></div>
+        </div>
+        <div class="bento-card reveal spotlight">
+          <div class="bento-icon">✦</div>
+          <h3>Interests</h3>
+          <div class="chips"><span>Web Development</span><span>Web Design</span><span>Problem Solving</span></div>
+        </div>
+        <div class="bento-card reveal spotlight">
+          <div class="bento-icon">⚙</div>
+          <h3>Soft Skills</h3>
+          <div class="chips"><span>Analytical Thinking</span><span>Software Fundamentals</span><span>Problem Solving</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal"><em>03.</em> Featured Projects</h2>
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Websites</button>
+        <button class="filter" data-filter="app">Applications</button>
+      </div>
+
+      <div class="projects" id="projectGrid">
+        <article class="project reveal tilt spotlight" data-cat="web">
+          <div class="project-top"><span class="project-num">01</span><span class="project-emoji">🛍️</span></div>
+          <h3>Levoilestores Rebranding</h3>
+          <p>Redesigned and rebranded the Levoilestores website with a modern, visually consistent interface that improves presentation and usability.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="project-links">
+            <a href="https://abobakrr1.github.io/leviolestores-rebranding/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
+            <a href="https://github.com/abobakrr1/leviolestores-rebranding" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="app">
+          <div class="project-top"><span class="project-num">02</span><span class="project-emoji">💬</span></div>
+          <h3>Chatting System</h3>
+          <p>A web‑based real‑time chatting system for communication between users, with database‑backed data and an interactive messaging interface.</p>
+          <ul class="tags"><li>JavaScript</li><li>SQL</li><li>Databases</li></ul>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="web">
+          <div class="project-top"><span class="project-num">03</span><span class="project-emoji">🎮</span></div>
+          <h3>Games Hub</h3>
+          <p>A platform for presenting and organizing gaming content, featuring structured layouts, user‑focused navigation and a responsive UI.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="web">
+          <div class="project-top"><span class="project-num">04</span><span class="project-emoji">🧑‍💻</span></div>
+          <h3>Personal Portfolio</h3>
+          <p>A personal portfolio to showcase projects and technical skills, focused on responsive design and clear presentation — my first version.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="project-links">
+            <a href="https://abobakrr1.github.io/my-portfolio/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
+            <a href="https://github.com/abobakrr1/my-portfolio" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="app">
+          <div class="project-top"><span class="project-num">05</span><span class="project-emoji">📝</span></div>
+          <h3>Notes Application</h3>
+          <p>Create and manage notes with a simple, user‑friendly interface powered by interactive JavaScript functionality.</p>
+          <ul class="tags"><li>JavaScript</li><li>DOM</li><li>UI</li></ul>
+          <div class="project-links">
+            <a href="https://abobakrr1.github.io/notes/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
+            <a href="https://github.com/abobakrr1/notes" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="app">
+          <div class="project-top"><span class="project-num">06</span><span class="project-emoji">🧮</span></div>
+          <h3>Calculator</h3>
+          <p>A functional calculator with arithmetic operations, interactive input handling and a clean, intuitive interface.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="project-links">
+            <a href="https://abobakrr1.github.io/calculator/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
+            <a href="https://github.com/abobakrr1/calculator" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal tilt spotlight" data-cat="app">
+          <div class="project-top"><span class="project-num">07</span><span class="project-emoji">🔢</span></div>
+          <h3>Counter App</h3>
+          <p>An interactive counter with increment and control functionality, wrapped in a simple and easy‑to‑use interface.</p>
+          <ul class="tags"><li>JavaScript</li><li>Events</li></ul>
+          <div class="mini-counter">
+            <button data-step="-1" aria-label="Decrease">−</button>
+            <output id="miniCount">0</output>
+            <button data-step="1" aria-label="Increase">+</button>
+          </div>
+          <div class="project-links">
+            <a href="https://abobakrr1.github.io/counter/" target="_blank" rel="noopener" class="p-link primary">Live Demo <span>↗</span></a>
+            <a href="https://github.com/abobakrr1/counter" target="_blank" rel="noopener" class="p-link">Code <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <h2 class="section-title reveal"><em>04.</em> Education</h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card spotlight">
+            <span class="tl-date">Present — 2028 (Expected)</span>
+            <h3>Bachelor of Computer Science</h3>
+            <h4>Al Sadat Academy for Management Sciences</h4>
+            <p>Studying Object‑Oriented Programming, Data Structures, Algorithms, Networking, Electronics and Software Development Fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <h2 class="section-title reveal center"><em>05.</em> What's Next?</h2>
+      <h3 class="contact-big reveal">Let's build something <span class="gradient-text">amazing</span> together.</h3>
+      <p class="contact-sub reveal">Have a project, an opportunity, or just want to say hi? My inbox is always open.</p>
+
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <a class="c-card reveal spotlight" href="tel:+201140174204">
+            <span class="c-icon">📞</span>
+            <div><small>Phone</small><b>+20 114 017 4204</b></div>
+          </a>
+          <a class="c-card reveal spotlight" href="https://wa.me/201140174204" target="_blank" rel="noopener">
+            <span class="c-icon">💬</span>
+            <div><small>WhatsApp</small><b>Chat with me</b></div>
+          </a>
+          <a class="c-card reveal spotlight" href="https://github.com/abobakrr1" target="_blank" rel="noopener">
+            <span class="c-icon">🐙</span>
+            <div><small>GitHub</small><b>@abobakrr1</b></div>
+          </a>
+          <div class="c-card reveal spotlight">
+            <span class="c-icon">📍</span>
+            <div><small>Location</small><b>Cairo, Egypt</b></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal spotlight" id="contactForm">
+          <div class="field">
+            <input type="text" id="cName" required placeholder=" " />
+            <label for="cName">Your Name</label>
+          </div>
+          <div class="field">
+            <textarea id="cMsg" rows="4" required placeholder=" "></textarea>
+            <label for="cMsg">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic">Send via WhatsApp <span>→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by <b>Abobakr Khaled</b> · © <span id="year"></span></p>
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
